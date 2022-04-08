@@ -10,3 +10,4 @@ v4l = "0.12.1"
 nokhwa = "0.9.4"
 eframe = "0.17.0"
 image = "0.24.1"
+gphoto = { git = "https://github.com/RyanBluth/gphoto-rs.git" }

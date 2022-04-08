@@ -1150,6 +1150,25 @@ dependencies = [
 ]
 
 [[package]]
+name = "gphoto"
+version = "0.1.2"
+source = "git+https://github.com/RyanBluth/gphoto-rs.git#a65a21efe78d16fd033eba1cb3027278a2faf1da"
+dependencies = [
+ "gphoto2-sys",
+ "libc",
+]
+
+[[package]]
+name = "gphoto2-sys"
+version = "0.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "be5a250bd1765bd17762e68468c1ed14517eeb0e414699810072598511d7f898"
+dependencies = [
+ "libc",
+ "pkg-config",
+]
+
+[[package]]
 name = "half"
 version = "1.8.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1888,6 +1907,7 @@ name = "photobooth-rs"
 version = "0.1.0"
 dependencies = [
  "eframe",
+ "gphoto",
  "image 0.24.1",
  "nokhwa",
  "v4l",
